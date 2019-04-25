@@ -422,7 +422,7 @@ mode "$mode_gaps_outer" {
 ############# CUSTOM CONFIG
 
 # set mouse speed to fast
-exec xinput set-prop "Macbook SPI Touchpad" "libinput Accel Speed" 1
+exec xinput set-prop "Apple SPI Touchpad" "libinput Accel Speed" 1
 # get audio working
 exec pkill pulseaudio && dbus-launch
 # screenshot
