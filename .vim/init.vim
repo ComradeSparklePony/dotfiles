@@ -7,6 +7,7 @@ Plug 'haolloyin/vim-red'
 Plug 'reedes/vim-pencil'
 Plug 'sgur/vim-editorconfig'
 Plug 'ajmwagar/vim-deus'
+Plug 'wlangstroth/vim-racket'
 call plug#end()
 
 " netrw (builtin dir browser) config
@@ -22,6 +23,12 @@ set autoindent
 
 " color scheme
 colorscheme deus
+syntax on
+
+" help vim load plugins
+filetype on
+filetype indent on
+filetype plugin on
 
 " defaults tabs: 4 spaces
 set shiftwidth=4

@@ -144,3 +144,5 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 
 alias initiate_hacking_sequence='echo "INITIATING HACKING SEQUENCE" && sleep .5 && for i in {1..100}; do sleep .1 | echo "$i%"; done && echo "MAINFRAME BREACHED" && sleep 1.5 && echo "EXTRACTING FILES..." && sleep 3 && echo "EXTRACTION COMPLETE." && echo "CYBERNUKING THE FIREWALL" && say boom && echo "CYBERWALL DESTROYED" && sleep .5 && echo "INSERTING PAYLOAD" && sleep 2 && echo "PAYLOAD INSERTED" && echo "CREATING BACKDOOR" && sleep 6 && echo "BACKDOOR CREATED" && echo "PROCESS COMPLETED"'
 export EDITOR=nvim
+alias notes="nvim ~/Documents/notes"
+
