@@ -1,13 +1,21 @@
 " vim-plug for plugin installation
 call plug#begin('~/.vim/plugged')
+"""" colorschemes
+Plug 'ajmwagar/vim-deus'
+"""" language plugins
+Plug 'wlangstroth/vim-racket'
+Plug 'reedes/vim-pencil'
+Plug 'haolloyin/vim-red'
 Plug 'elmcast/elm-vim'
 Plug 'elixir-editors/vim-elixir'
-Plug 'zyedidia/vim-snake'
-Plug 'haolloyin/vim-red'
-Plug 'reedes/vim-pencil'
+"""" other plugins
 Plug 'sgur/vim-editorconfig'
-Plug 'ajmwagar/vim-deus'
-Plug 'wlangstroth/vim-racket'
+Plug 'zyedidia/vim-snake'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+" plugins for lisps
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
 call plug#end()
 
 " netrw (builtin dir browser) config
