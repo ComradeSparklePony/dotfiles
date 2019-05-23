@@ -27,7 +27,7 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminal
+bindsym $mod+Return exec xterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -340,11 +340,11 @@ bar {
         separator  #454947
 
 #                      border  backgr. text
-        focused_workspace  #F9FAF9 #16a085 #292F34
-        active_workspace   #595B5B #353836 #FDF6E3
-        inactive_workspace #595B5B #222D31 #EEE8D5
+        focused_workspace  #e5c07b #666666 #e5c07b 
+        active_workspace   #666666 #666666 #e5c07b
+        inactive_workspace #2c323b #2c323b #e5c07b 
         binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
+        urgent_workspace   #e5c07b #d54e53 #e5c07b 
     }
 }
 
@@ -353,10 +353,10 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #FFFFFF #556064 #80FFF9 #FDF6E3
-  client.focused_inactive #FFFFFF #2F3D44 #1ABC9C #454948
-  client.unfocused        #000000 #2F3D44 #1ABC9C #454948
-  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+  client.focused          #e5c07b #666666 #e5c07b FDF6E3
+  client.focused_inactive #e5c07b #666666 #e5c07b #454948
+  client.unfocused        #2c323b #2c323b #e5c07b #454948
+  client.urgent           #e5c07b #d54e53 #e5c07b #268BD2
   client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
   client.background       #2B2C2B
