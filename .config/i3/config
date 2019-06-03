@@ -27,7 +27,7 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -353,7 +353,7 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #e5c07b #666666 #e5c07b FDF6E3
+  client.focused          #e5c07b #666666 #e5c07b #FDF6E3
   client.focused_inactive #e5c07b #666666 #e5c07b #454948
   client.unfocused        #2c323b #2c323b #e5c07b #454948
   client.urgent           #e5c07b #d54e53 #e5c07b #268BD2
@@ -423,7 +423,12 @@ mode "$mode_gaps_outer" {
 
 # set mouse speed to fast
 exec xinput set-prop "Apple SPI Touchpad" "libinput Accel Speed" 1
+
 # get audio working
 exec pkill pulseaudio && dbus-launch
+
 # screenshot
 bindsym --release $mod+F4 exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/           screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`'
+
+# remap caps lock to esc
+exec xmodmap ~/.Xmodmap

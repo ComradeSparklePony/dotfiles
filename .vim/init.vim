@@ -40,6 +40,12 @@ filetype plugin on
 
 " defaults tabs: 4 spaces
 set shiftwidth=4
+set tabstop=4
 
 " statusline
 set statusline=%#number#<<%v:%l>>%#function#\ %o/%{\ line2byte(line(\"$\")+1)-1\ }b%=%#keyword#%y\ %#visual#%-.100F
+
+" language-specific settings
+
+" scheme
+autocmd Filetype scheme setlocal expandtab tabstop=4 shiftwidth=4
