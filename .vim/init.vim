@@ -4,15 +4,17 @@ call plug#begin('~/.vim/plugged')
 Plug 'ajmwagar/vim-deus'
 """" language plugins
 Plug 'wlangstroth/vim-racket'
-Plug 'reedes/vim-pencil'
 Plug 'haolloyin/vim-red'
 Plug 'elmcast/elm-vim'
 Plug 'elixir-editors/vim-elixir'
+Plug 'mikewest/vimroom'
+Plug 'rsmenon/vim-mathematica'
 """" other plugins
 Plug 'sgur/vim-editorconfig'
 Plug 'zyedidia/vim-snake'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'jpalardy/vim-slime'
 " plugins for lisps
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
@@ -45,7 +47,13 @@ set tabstop=4
 " statusline
 set statusline=%#number#<<%v:%l>>%#function#\ %o/%{\ line2byte(line(\"$\")+1)-1\ }b%=%#keyword#%y\ %#visual#%-.100F
 
-" language-specific settings
+"""" language-specific settings
 
 " scheme
 autocmd Filetype scheme setlocal expandtab tabstop=4 shiftwidth=4
+
+" mathematica/wolfram language
+autocmd BufNewFile,BufRead *.nb,*.wl set filetype=mma
+
+" vim-slime
+let g:slime_target = 'Tmux'

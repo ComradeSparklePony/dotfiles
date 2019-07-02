@@ -432,3 +432,6 @@ bindsym --release $mod+F4 exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir
 
 # remap caps lock to esc
 exec xmodmap ~/.Xmodmap
+
+# mouse warping
+mouse_warping none
