@@ -24,3 +24,5 @@ alias initiate_hacking_sequence='echo "INITIATING HACKING SEQUENCE" && sleep .5 
 export EDITOR=nvim
 alias notes="nvim ~/Documents/notes"
 
+source ~/.profile
+source ~/.env
